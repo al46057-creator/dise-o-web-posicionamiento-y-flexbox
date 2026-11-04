@@ -1,0 +1,150 @@
+
+/* Diseño general */
+body {
+    margin: 0;
+    background-color: #f3f5ed;
+    font-family: Arial;
+    color: #333333;
+}
+
+/* Encabezado */
+.encabezado {
+    display: block;
+    background-color: #285943;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Menu */
+nav {
+    background-color: #dce8d9;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: #285943;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: #c1d5c0;
+}
+
+/* Secciones */
+section {
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #285943;
+}
+
+/* Inicio */
+.inicio {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Tarjetas */
+.tarjetas {
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 25%;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+/* Tabla */
+.tabla {
+    display: table;
+    width: 100%;
+}
+
+.celda {
+    display: table-cell;
+    background-color: #dce8d9;
+    padding: 20px;
+    border: 5px solid #f3f5ed;
+    text-align: center;
+}
+
+/* Flexbox */
+.flexbox {
+    background-color: white;
+    text-align: center;
+}
+
+.contenedor-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f5ed;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Direcciones */
+.fila {
+    flex-direction: row;
+}
+
+.fila-invertida {
+    flex-direction: row-reverse;
+}
+
+.columna {
+    flex-direction: column;
+}
+
+.columna-invertida {
+    flex-direction: column-reverse;
+}
+
+/* Elementos flexibles */
+.consejo {
+    background-color: #dce8d9;
+    width: 180px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Pie de pagina */
+.pie {
+    display: block;
+    background-color: #285943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adaptacion para celulares */
+@media screen and (max-width: 600px) {
+    .tarjeta {
+        width: 80%;
+    }
+
+    .tabla {
+        display: block;
+    }
+
+    .celda {
+        display: block;
+    }
+}
